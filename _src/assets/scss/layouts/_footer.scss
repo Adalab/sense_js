@@ -1,0 +1,11 @@
+.footer {
+  border-top: solid 1px $color-lighter-gray;
+  width: 100%;
+  &_small {
+    font-size: 14px;
+    color: $color-brownish-gray;
+  }
+  &_img {
+    position: static;
+  }
+}
