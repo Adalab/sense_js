@@ -1,11 +1,19 @@
 .footer {
   border-top: solid 1px $color-lighter-gray;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  align-items: center;
   &_small {
+    margin-top: 18px;
+    opacity: 0.5;
     font-size: 14px;
     color: $color-brownish-gray;
   }
   &_img {
+    width: 103px;
+    margin-top: 12px;
     position: static;
   }
 }
