@@ -1,0 +1,19 @@
+.header {
+  &_container {
+    background-color: $color-white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 31px 79px 30px 40px;
+    margin-bottom: 0;
+    height: 111px;
+    width: 320px;
+    &_img {
+      background: url("../../images/tarjetas-molonas.png");
+      height: 50px;
+      width: 201px;
+      margin: 0;
+      background-size: contain;
+    }
+  }
+}
