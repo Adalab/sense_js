@@ -1,0 +1,44 @@
+.container {
+  margin: 38px 45px 40px 35px;
+}
+.card_header {
+  display: flex;
+  height: 75px;
+  font-family: Montserrat;
+}
+.blue-rectangle {
+  background-color: $color-dirty-blue;
+  width: 5px;
+  height: 42px;
+}
+.card_user-name {
+  height: 42px;
+}
+.card_title {
+  color: $color-title;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.11;
+}
+.card_text {
+  color: $color-text;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+}
+.card_footer_list {
+  display: flex;
+  list-style: none;
+}
+
+.card_footer_item {
+  @include center();
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  border: solid $color-hospital-green;
+}
