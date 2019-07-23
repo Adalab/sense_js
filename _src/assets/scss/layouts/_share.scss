@@ -1,0 +1,13 @@
+.share {
+  padding: 10px 0 30px;
+  &_content {
+    display: flex;
+    padding-bottom: 30px;
+    text-decoration: none;
+    &_icon {
+      color: $color-dull-orange;
+      font-size: 18px;
+      margin-right: 12px;
+    }
+  }
+}
