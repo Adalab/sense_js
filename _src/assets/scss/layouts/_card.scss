@@ -1,49 +1,90 @@
+.card_content {
+  display: flex;
+  flex-direction: column;
+  min-height: 460px;
+  background-color: rgb(245, 200, 200);
+}
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
   margin: 38px 45px 40px 35px;
 }
-.card_header {
+.card {
   display: flex;
-  height: 75px;
-  font-family: Montserrat;
-}
-.blue-rectangle {
-  background-color: $color-dirty-blue;
-  width: 5px;
-  height: 42px;
-}
-.card_user-name {
-  height: 42px;
-}
-.card_title {
-  color: $color-title;
-  font-size: 18px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.11;
-}
-.card_text {
-  color: $color-text;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.25;
-}
-.card_image {
-  background-image: url(http://rotarymeansbusiness.com/wp-content/uploads/avatar-female.png);
-  background-size: cover;
-  background-position: center;
-}
-.card_footer_list {
-  display: flex;
-  list-style: none;
-}
-
-.card_footer_item {
-  @include center();
-  width: 32px;
-  height: 32px;
-  border-radius: 16px;
-  border: solid $color-hospital-green;
+  flex-direction: column;
+  width: 240px;
+  background-color: $color-white;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, -20), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+  &_button-reset {
+    align-self: initial;
+    height: 30px;
+    font-size: 12px;
+    line-height: 1.67;
+    text-transform: uppercase;
+    color: $color-dark-gray;
+    background-color: transparent;
+    border: 1px solid $color-white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    .trash_icon {
+      margin-right: 8px;
+    }
+  }
+  &_header {
+    font-family: Montserrat;
+    border-left: 5px solid $color-dirty-blue;
+    margin-top: 21px;
+    margin-bottom: 10px;
+  }
+  &_name {
+    color: $color-title;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.11;
+    text-transform: capitalize;
+    word-break: break-all;
+    margin-left: 20px;
+  }
+  &_description {
+    color: $color-text;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.25;
+    text-transform: initial;
+    word-break: break-all;
+    margin-left: 20px;
+  }
+  &_img {
+    height: 200px;
+    width: 100%;
+    background-image: url(http://www.rincondealberto.com.es/wp-content/uploads/2018/10/fashionalia-tienda-de-moda-1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  &_footer_list {
+    list-style: none;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 32px);
+    text-align: center;
+    margin: 10px 0 12px 20px;
+  }
+  &_footer_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    border: solid 2px $color-hospital-green;
+    border-radius: 16px;
+    color: $color-dark-green-blue;
+  }
+  &_link {
+    text-decoration: none;
+    color: $color-dark-green-blue;
+  }
 }
