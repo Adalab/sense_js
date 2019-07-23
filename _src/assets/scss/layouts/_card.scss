@@ -30,6 +30,11 @@
   font-stretch: normal;
   line-height: 1.25;
 }
+.card_image {
+  background-image: url(http://rotarymeansbusiness.com/wp-content/uploads/avatar-female.png);
+  background-size: cover;
+  background-position: center;
+}
 .card_footer_list {
   display: flex;
   list-style: none;

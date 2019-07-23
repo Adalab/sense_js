@@ -35,7 +35,7 @@
   }
 
   &_actions {
-    border: 1.6px solid $color-dull-orange;
+    border: 1.6px solid (rgba($color-dull-orange, $alpha: 0.21));
     border-radius: 4px;
     width: 268px;
     height: 74px;
