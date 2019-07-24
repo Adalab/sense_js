@@ -1,3 +1,34 @@
+.legend {
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  cursor: pointer;
+  .legend__icon {
+    padding: 13px 0;
+    margin-right: 10px;
+    color: #e17334;
+  }
+  .legend__title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #54585a;
+    text-transform: uppercase;
+  }
+  .legend__arrow {
+    padding: 13px 0;
+    margin-left: auto;
+    color: #54585a;
+  }
+}
 .fill-in__items {
   border-bottom: 1px solid $color-light-gray;
   margin-bottom: 10px;
@@ -37,6 +68,9 @@
       border: solid 1px $color-hospital-green;
       margin-top: 6px;
       margin-left: 20px;
+    }
+    .action__hiddenField {
+      display: none;
     }
   }
 }
