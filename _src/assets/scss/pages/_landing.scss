@@ -42,6 +42,9 @@
   &_text {
     font-size: 12px;
     color: $color-dark-green-blue;
+    @media all and (minwidth: $width-tablet) {
+      font-size: 16px;
+    }
   }
 
   &_actions {
@@ -52,21 +55,35 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media all and (minwidth: $width-tablet) {
+      width: 325px;
+      height: 86px;
+    }
   }
 
   &_action {
     width: 60px;
     height: 48.8px;
     text-align: center;
+    @media all and (minwidth: $width-tablet) {
+      width: 75px;
+      height: 61px;
+    }
 
     &_icon {
       color: $color-dull-orange;
       font-size: 22.4px;
+      @media all and (minwidth: $width-tablet) {
+        font-size: 28px;
+      }
     }
     &_item {
       margin: 0;
       font-size: 12.8px;
       color: $color-dark-gray;
+      @media all and (minwidth: $width-tablet) {
+        font-size: 16px;
+      }
     }
   }
 }

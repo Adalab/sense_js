@@ -1,10 +1,13 @@
 .main_button {
-    width: 129px;
-    height: 42px;
-    font-size: 16px;
-    color: $color-white;
-    text-transform: capitalize;
-    background-color: $color-dirty-blue;
-    border-radius: 21px;
-    margin: 30px;
+  width: 129px;
+  height: 42px;
+  font-size: 16px;
+  color: $color-white;
+  text-transform: capitalize;
+  background-color: $color-dirty-blue;
+  border-radius: 21px;
+  margin: 30px;
+  @media all and (minwidth: $width-tablet) {
+    margin: 0 0 186px 0;
+  }
 }
