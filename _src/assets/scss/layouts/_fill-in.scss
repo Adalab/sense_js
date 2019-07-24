@@ -1,0 +1,76 @@
+.legend {
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  cursor: pointer;
+  .legend__icon {
+    padding: 13px 0;
+    margin-right: 10px;
+    color: #e17334;
+  }
+  .legend__title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #54585a;
+    text-transform: uppercase;
+  }
+  .legend__arrow {
+    padding: 13px 0;
+    margin-left: auto;
+    color: #54585a;
+  }
+}
+.fill-in__items {
+  border-bottom: 1px solid $color-light-gray;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.fill-in__item {
+  display: flex;
+  flex-direction: column;
+
+  .fill-in__input {
+    border: solid 1px $color-hospital-green;
+    min-width: 281px;
+    height: 30px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+  }
+
+  .fill-in__buttonImg-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    .fill-in__button {
+      height: 30px;
+      width: 140px;
+      margin-top: 6px;
+      margin-bottom: 20px;
+      border: 0px;
+      border-radius: 5px;
+      background-color: $color-dull-orange;
+      box-shadow: 0 0 5px $color-light-gray;
+    }
+    .img-profile__preview {
+      height: 30px;
+      width: 30px;
+      border: solid 1px $color-hospital-green;
+      margin-top: 6px;
+      margin-left: 20px;
+    }
+    .action__hiddenField {
+      display: none;
+    }
+  }
+}
