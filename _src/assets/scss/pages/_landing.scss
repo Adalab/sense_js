@@ -9,6 +9,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media all and (minwidth: $width-tablet) {
+      width: 419px;
+      padding-top: 350px;
+    }
   }
 
   &_img {
@@ -19,6 +23,9 @@
   &_description {
     margin-top: 35px;
     text-align: center;
+    @media all and (minwidth: $width-tablet) {
+      margin-top: 31px;
+    }
   }
 
   &_title {
@@ -27,6 +34,9 @@
     color: $color-dull-orange;
     font-size: 20px;
     margin: 0;
+    @media all and (minwidth: $width-tablet) {
+      font-size: 24px;
+    }
   }
 
   &_text {
@@ -35,7 +45,7 @@
   }
 
   &_actions {
-    border: 1.6px solid (rgba($color-dull-orange, $alpha: 0.21));
+    border: 1.6px solid $color-dull-orange;
     border-radius: 4px;
     width: 268px;
     height: 74px;
