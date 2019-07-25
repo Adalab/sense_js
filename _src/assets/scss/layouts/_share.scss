@@ -45,11 +45,11 @@
     border: none;
     border-radius: 12px;
     padding: 13px 17px;
+    margin-top: 30px;
     margin-bottom: 30px;
-    &_icon &_fa-address-card {
+    &_icon {
       font-size: 22px;
       margin-right: 9px;
-      font-family: "Font Awesome 5 Free";
       font-weight: 400;
       display: inline-block;
       font-style: normal;
@@ -58,7 +58,7 @@
 }
 
 .completed {
-  display: none;
+  //display: none;
   border-top: solid 1px $color-lighter-gray;
   border-bottom: solid 1px $color-lighter-gray;
   padding: 20px 0 30px;
@@ -82,6 +82,7 @@
     text-align: center;
     display: block;
     margin-bottom: 10px;
+    text-decoration: none;
   }
   &_button {
     display: flex;
@@ -96,10 +97,11 @@
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-style: normal;
-    &_icon &_fa-twitter {
+    margin: auto;
+    border-style: none;
+    &_icon {
       font-size: 18px;
       margin-right: 10px;
-      font-family: "Font Awesome 5 Brands";
       display: inline-block;
       font-size: normal;
       line-height: 1;
