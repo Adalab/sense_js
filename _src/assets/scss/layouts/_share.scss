@@ -1,4 +1,4 @@
-.share {
+.legend {
   padding: 10px 0 30px;
   &_content {
     display: flex;
@@ -8,6 +8,9 @@
       color: $color-dull-orange;
       font-size: 18px;
       margin-right: 12px;
+    }
+    &_title {
+      color: $color-dark-gray;
     }
   }
 }
