@@ -1,0 +1,43 @@
+@import "core/variables";
+
+.tittlePalettes {
+    display: flex;
+    flex-direction: row;
+}
+
+.colours {
+  text-transform: uppercase;
+}
+
+.box {
+  width: 30px;
+  height: 25px;
+}
+
+.box__1 {
+  background-color: $color-1-palette1;
+}
+.box__2 {
+  background-color: $color-2-palette1;
+}
+.box__3 {
+  background-color: $color-3-palette1;
+}
+.box__4 {
+  background-color: $color-1-palette2;
+}
+.box__5 {
+  background-color: $color-2-palette2;
+}
+.box__6 {
+  background-color: $color-3-palette2;
+}
+.box__7 {
+  background-color: $color-1-palette3;
+}
+.box__8 {
+  background-color: $color-2-palette3;
+}
+.box__9 {
+  background-color: $color-3-palette3;
+}
