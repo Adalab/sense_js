@@ -1,0 +1,118 @@
+.share_content {
+  @media all and (min-width: $width-tablet) {
+    border-radius: 6px;
+    height: 812px;
+    width: 329px;
+  }
+}
+
+.share_legend {
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  cursor: pointer;
+  &_icon {
+    color: $color-dull-orange;
+    padding: 13px 0;
+    margin-right: 10px;
+  }
+  &_title {
+    color: $color-dark-gray;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  &_arrow {
+    padding: 13px 0;
+    margin-left: auto;
+    color: $color-dark-gray;
+  }
+}
+
+.share_button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_img {
+    background-color: $color-dull-orange;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $color-white;
+    border: none;
+    border-radius: 12px;
+    padding: 13px 17px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    &_icon {
+      font-size: 22px;
+      margin-right: 9px;
+      font-weight: 400;
+      display: inline-block;
+      font-style: normal;
+    }
+  }
+}
+
+.completed_content {
+  //display: none;
+  border-top: solid 1px $color-lighter-gray;
+  border-bottom: solid 1px $color-lighter-gray;
+  padding: 20px 0 30px;
+  &_title {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: $color-dark-gray;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  &_url {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    color: $color-dull-orange;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  &_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #00a0f5;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    color: $color-white;
+    padding: 3px 9px 7px 9.5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    margin: auto;
+    border-style: none;
+    &_icon {
+      font-size: 18px;
+      margin-right: 10px;
+      display: inline-block;
+      font-size: normal;
+      line-height: 1;
+    }
+  }
+}
