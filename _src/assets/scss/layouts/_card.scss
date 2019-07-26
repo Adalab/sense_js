@@ -100,11 +100,15 @@
     color: $color-1-palette1;
   }
   .card_footer_item {
-    color: $color-1-palette1;
+    // color: $color-1-palette1;
     border: solid 2px $color-3-palette1;
   }
   .card_link {
     color: $color-1-palette1;
+  }
+
+  .card_link[href]:not([href=""]) {
+    color: red;
   }
 }
 
