@@ -1,13 +1,18 @@
 .main_button {
   width: 129px;
   height: 42px;
-  font-size: 16px;
-  color: $color-white;
-  text-transform: capitalize;
   background-color: $color-dirty-blue;
   border-radius: 21px;
   margin: 30px;
   @media all and (min-width: $width-tablet) {
     margin: 186px 0 59px 0;
+  }
+  &_link {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-white;
   }
 }
