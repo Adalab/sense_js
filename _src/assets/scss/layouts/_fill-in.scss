@@ -30,7 +30,7 @@
 }
 .fill-in {
   &_items {
-    border-bottom: 1px solid $color-light-gray;
+    border-bottom: solid 1px $color-lighter-gray;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;

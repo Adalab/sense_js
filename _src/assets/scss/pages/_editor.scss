@@ -5,7 +5,7 @@
       $color-light-gray,
       $color-white
     );
-    margin: 0;
+    // margin: 0;
   }
   &_main {
     display: flex;
@@ -34,10 +34,11 @@
     @media all and (min-width: $width-desktop) {
       width: 585px;
     }
-    &_form {
-      @media all and (min-width: $width-tablet) {
-        width: 329px;
-      }
+  }
+  &_form {
+    @media all and (min-width: $width-tablet) {
+      width: 329px;
+      margin-top: 10px;
     }
   }
 }
