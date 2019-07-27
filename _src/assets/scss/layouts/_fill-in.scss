@@ -39,10 +39,16 @@
     display: flex;
     flex-direction: column;
   }
+  &_label {
+    font-size: 14px;
+    color: $color-dark-green-blue;
+  }
   &_input {
     border: solid 1px $color-hospital-green;
     min-width: 281px;
     height: 30px;
+    font-size: 14px;
+    color: $color-very-light-gray;
     margin-top: 6px;
     margin-bottom: 20px;
     padding-left: 5px;
@@ -55,6 +61,8 @@
   &_button {
     height: 30px;
     width: 140px;
+    font-size: 14px;
+    color: $color-white;
     margin-top: 6px;
     margin-bottom: 20px;
     border: 0px;
