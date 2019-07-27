@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-'use strict';
-=======
 "use strict";
 
 const changeText = function(ev) {
@@ -32,4 +29,3 @@ const changeText = function(ev) {
 
 const container = document.querySelector(".fill-in_items");
 container.addEventListener("keyup", changeText);
->>>>>>> 72088e76ad719fa968b8e7090f277dc31fd6a476
