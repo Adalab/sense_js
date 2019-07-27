@@ -44,11 +44,14 @@
     color: $color-dark-green-blue;
   }
   &_input {
+    &::placeholder {
+      color: $color-very-light-gray;
+    }
     border: solid 1px $color-hospital-green;
     min-width: 281px;
     height: 30px;
     font-size: 14px;
-    color: $color-very-light-gray;
+    color: $color-dark-green-blue;
     margin-top: 6px;
     margin-bottom: 20px;
     padding-left: 5px;

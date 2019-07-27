@@ -4,10 +4,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
   @media all and (min-width: $width-tablet) {
+    width: 768px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+  @media all and (min-width: $width-desktop) {
+    width: 1024px;
   }
   &_small {
     margin-top: 18px;

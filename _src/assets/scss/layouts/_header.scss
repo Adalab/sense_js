@@ -1,4 +1,11 @@
 .header {
+  @media all and (min-width: $width-tablet) {
+    width: 768px;
+    margin: auto;
+  }
+  @media all and (min-width: $width-desktop) {
+    width: 1024px;
+  }
   &_container {
     background-color: $color-white;
     display: flex;
