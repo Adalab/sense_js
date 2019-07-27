@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   margin: auto;
+  font-family: $primary-Font;
   @media all and (min-width: $width-tablet) {
     width: 768px;
     flex-direction: row;
