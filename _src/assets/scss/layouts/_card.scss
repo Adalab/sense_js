@@ -104,6 +104,9 @@
     border: solid 2px $color-3-palette1;
   }
   .card_link {
+    color: $color-link-deactivated;
+  }
+  .card_link[href]:not([href=""]) {
     color: $color-1-palette1;
   }
 }
@@ -120,6 +123,9 @@
     border: solid 2px $color-3-palette2;
   }
   .card_link {
+    color: $color-link-deactivated;
+  }
+  .card_link[href]:not([href=""]) {
     color: $color-1-palette2;
   }
 }
@@ -135,6 +141,9 @@
     border: solid 2px $color-3-palette3;
   }
   .card_link {
+    color: $color-link-deactivated;
+  }
+  .card_link[href]:not([href=""]) {
     color: $color-1-palette3;
   }
 }
