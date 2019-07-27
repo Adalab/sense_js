@@ -3,11 +3,62 @@
   flex-direction: column;
   min-height: 460px;
   min-width: 320px;
-  background-color: rgb(202, 199, 199);
+  background: linear-gradient(
+    180deg,
+    #ff2400,
+    #e81d1d,
+    #e8b71d,
+    #e3e81d,
+    #1de840,
+    #1ddde8,
+    #2b1de8,
+    #dd00f3,
+    #dd00f3
+  );
+  background-size: 200% 200%;
+  -webkit-animation: rainbow 10s ease infinite;
+  -z-animation: rainbow 10s ease infinite;
+  -o-animation: rainbow 10s ease infinite;
+  animation: rainbow 10s ease infinite;
+
   @media all and (min-width: $width-tablet) {
     border-radius: 6px;
-    height: 100%;
+    height: 1000px;
+    margin: 0;
     // width: 329px;
+  }
+}
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
   }
 }
 .container {
@@ -17,7 +68,10 @@
   height: 100%;
   margin: 38px 45px 40px 35px;
   @media all and (min-width: $width-tablet) {
-    margin: 173px 45px 260px 44px;
+    margin: auto;
+    position: relative;
+    top: 173px;
+    // margin: 173px 45px 260px 44px;
   }
 }
 .card {
