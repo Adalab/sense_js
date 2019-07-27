@@ -1,15 +1,13 @@
-<<<<<<< HEAD
 @import "core/variables";
-.colours {
-  color: #54585a;
-  font-weight: 14px;
+.design_palette-description {
+  color: $color-dark-gray;
+  font-family: $primary-Font;
+  font-size: 14px;
   text-transform: uppercase;
   width: 62px;
   height: 19px;
-  margin-left: 39px;
+  margin-left: 10px;
 }
-=======
->>>>>>> 5d5da6d1b188ae4c142f72e388eea969fb32ec24
 .legend {
   width: 100%;
   height: 50px;
@@ -45,12 +43,11 @@
 
 .tittlePalettes {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 20px;
 }
 
 .colours {
-  color: $color-dark-gray;
-  font-family: $primary-Font;
   font-size: 14px;
   text-transform: uppercase;
 }
