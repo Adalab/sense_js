@@ -1,20 +1,28 @@
 .editor {
   &_main {
+    background-image: linear-gradient(
+      to bottom,
+      $color-light-gray,
+      $color-white
+    );
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 20px 0 20px;
+    min-width: 320px;
+    font-family: $primary-Font;
     @media all and (min-width: $width-tablet) {
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
-      justify-content: center;
+      justify-content: space-around;
     }
   }
   &_card {
-    width: 500px;
+    // min-width: 500px;
   }
   &_form {
-    width: 500px;
+    // width: 500px;
   }
 }
