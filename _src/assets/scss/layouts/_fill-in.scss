@@ -14,19 +14,18 @@
   &_icon {
     padding: 13px 0;
     margin-right: 10px;
-    color: #e17334;
+    color: $color-dull-orange;
   }
   &_title {
-    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-weight: 400;
-    color: #54585a;
+    color: $color-dark-gray;
     text-transform: uppercase;
   }
   &_arrow {
     padding: 13px 0;
     margin-left: auto;
-    color: #54585a;
+    color: $color-dark-gray;
   }
 }
 .fill-in {
