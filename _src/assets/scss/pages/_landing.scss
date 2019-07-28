@@ -48,13 +48,14 @@
   }
 
   &_actions {
-    border: 1.6px solid $color-dull-orange;
+    border: 1.6px solid $color-border-landing;
     border-radius: 4px;
     width: 268px;
     height: 74px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 18px;
     @media all and (min-width: $width-tablet) {
       width: 325px;
       height: 86px;
