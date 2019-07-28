@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="icon" href="favicon.png" />
+        <link href="./assets/fonts/css/fontawesome.css" rel="stylesheet" />
+        <link href="./assets/fonts/css/brands.css" rel="stylesheet" />
+        <link href="./assets/fonts/css/solid.css" rel="stylesheet" />
+        <link href="./assets/fonts/css/regular.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900%7CMontserrat:400,700%7COpen+Sans:400,600,700&display=swap"
+        />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <title>Awesome Cards by Sense.Js</title>
+    </head>
+    
+    <body>
+        <header class="header">
+            <div class="header_container"> <a href="./index.html">
+            <img class="header_container_img" src="../../assets/images/tarjetas-molonas.png">
+        </a>
+
+            </div>
+        </header>
+        <section class="editor_container">
+            <main class="editor_main">
+                <section class="editor_card">
+                    <main class="card_content palette1">
+                        <div class="container">
+                            <button class="card_button-reset"> <i class="far fa-trash-alt trash_icon"></i> Reset</button>
+                            <div class="card js-card">
+                                <div class="card_header">
+                                     <h1 class="js-name card_name" data-placeholder="Nombre Apellido">Nombre Apellido</h1>
+
+                                    <p class="js-job card_description">Front-end developer</p>
+                                </div>
+                                <div class="card_img">
+                                    <img class="" src="" alt="" />
+                                </div>
+                                <ul class="card_footer_list">
+                                    <li class="card_footer_item"> <a class=" js-phone card_link" href="" target="_blank"><i class="fas fa-mobile-alt"></i></a>
+
+                                    </li>
+                                    <li class="card_footer_item"> <a class="js-email card_link" href="" data-prefix="mailto:" target="_blank">
+            <i class="far fa-envelope"></i>
+          </a>
+
+                                    </li>
+                                    <li class="card_footer_item"> <a class="js-linkedin card_link" href="" data-placeholder="" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+                                    </li>
+                                    <li class="card_footer_item"> <a class="js-github card_link" href="" data-placeholder="" target="_blank"><i class="fab fa-github-alt"></i></a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </main>
+                </section>
+                <section class="editor_form">
+                    <legend class="legend"> <i class="legend_icon far fa-object-ungroup"></i>
+
+                         <h2 class="legend_title">Diseña</h2>
+ <i class="fas fas fa-chevron-up legend_arrow"></i>
+
+                    </legend>
+                    <div class="tittlePalettes">
+                        <div class="design_palette-description">Colores</div>
+                        <div class="palettes">
+                            <section class="design_palette-option">
+                                <input class="form_item js-select1" type="radio" value="color" name="btn"
+                                checked/>
+                                <div class="design_palette item item_1"></div>
+                                <div class="design_palette  item item_2"></div>
+                                <div class="design_palette item item_3"></div>
+                            </section>
+                            <section class="design_palette-option">
+                                <input class="form_item js-select2" type="radio" value="color" name="btn"
+                                />
+                                <div class="design_palette item item_4"></div>
+                                <div class="design_palette item item_5"></div>
+                                <div class="design_palette item item_6"></div>
+                            </section>
+                            <section class="design_palette-option">
+                                <input class="form_item js-select3" type="radio" value="color" name="btn"
+                                />
+                                <div class="design_palette item item_7"></div>
+                                <div class="design_palette item item_8"></div>
+                                <div class="design_palette item item_9"></div>
+                            </section>
+                        </div>
+                    </div>
+                    <legend class="legend"> <i class="far fa-keyboard legend_icon"></i>
+
+                         <h2 class="legend_title">Rellena</h2>
+ <i class="fas fas fa-chevron-up legend_arrow"></i>
+
+                    </legend>
+                    <div class="fill-in_items">
+                        <div class="fill-in_item">
+                            <label class="fill-in_label" for="full_name">Nombre completo</label>
+                            <input class="js-name fill-in_input" id="full_name"
+                            type="text" name="name" placeholder="Hermione Granger" required/>
+                        </div>
+                        <div class="fill-in_item">
+                            <label class="fill-in_label" for="job">Puesto</label>
+                            <input class="js-job fill-in_input" id="job" type="text"
+                            name="job" placeholder="Front-end developer" />
+                        </div>
+                        <div class="fill-in_item">
+                            <label class="fill-in_label" for="img-profile">Imagen de perfil</label>
+                            <div class="fill-in_buttonImg-wrapper">
+                                <input class="fill-in_button" id="img-profile" type="button" value="Añadir imagen"
+                                name="img-profile" />
+                                <input name="photo" type="file" id="img-selector" class="action_hiddenField">
+                                <div class="img-profile_preview"></div>
+                            </div>
+                        </div>
+                        <div class="fill-in_item">
+                            <label class="fill-in_label" for="phone">Teléfono</label>
+                            <input class="js-phone fill-in_input" id="phone" type="tel"
+                            minlength="9" name="phone" placeholder="678334765" />
+                        </div>
+                        <div class="fill-in_item">
+                            <label class="fill-in_label" for="email">Email</label>
+                            <input class="js-email fill-in_input" id="email" type="email"
+                            name="email" placeholder="hermione-granger@gmail.com" />
+                        </div>
+                        <div class="fill-in_item">
+                            <label class="fill-in_label" for="linkedin">Linkedin</label>
+                            <input class="js-linkedin fill-in_input" id="linkedin"
+                            type="text" name="linkedin" placeholder="hermionegranger" />
+                        </div>
+                        <div class="fill-in_item">
+                            <label class="fill-in_label" for="github">Github</label>
+                            <input class="js-github fill-in_input" id="github" type="text"
+                            name="github" placeholder="hermione-granger" />
+                        </div>
+                    </div>
+                    <legend class="share_legend"> <i class="share_legend_icon fas fa-share-alt"></i>
+
+                         <h2 class="share_legend_title">Comparte</h2>
+ <i class="share_legend_arrow fas fa-chevron-up"></i>
+
+                    </legend>
+                    <div class="share_button">
+                        <button type="submit" class="share_button_img"> <i class="share_button_img_icon far fa-address-card"></i>
+Crear tarjeta</button>
+                    </div>
+                    <div class="completed_content">
+                         <h3 class="completed_content_title">La tarjeta ha sido creada:</h3>
+ <a href="#" class="completed_content_url" target="_self">https://awesome-profile-card.com?id=A456DF0001</a>
+
+                        <button
+                        type="submit" class="completed_content_button"> <i class="completed_content_button_icon fab fa-twitter"></i>
+Compartir
+                            en twitter</button>
+                    </div>
+                </section>
+            </main>
+        </section>
+        <footer class="footer"> <small class="footer_small"> Awesome profile-cards @ Sense.JS 2019</small>
+
+            <img
+            class="footer_img" src="./assets/images/logo-adalab-80px.png" />
+        </footer>
+        <script type="text/javascript" src="./assets/js/design.js"></script>
+        <script type="text/javascript" src="./assets/js/main.js"></script>
+    </body>
+
+</html>
