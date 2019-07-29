@@ -9,6 +9,23 @@
 }
 .form_item {
   margin-right: 10px;
+  display: none;
+}
+.radio_btn {
+  width: 17px;
+  height: 17px;
+  background-color: $color-white;
+  border-radius: 50%;
+  border: 1px solid $color-lighter-gray;
+  margin-right: 5px;
+}
+input[type="radio"]:checked + label {
+  width: 17px;
+  height: 17px;
+  background-color: $color-white;
+  border-radius: 50%;
+  border: 6px solid $color-deep-blue;
+  margin-right: 10px;
 }
 
 .legend {
