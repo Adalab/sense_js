@@ -75,6 +75,10 @@
   }
 }
 .img-profile_preview {
+  background-position: center;
+  backround-repeat: no-repeat;
+  background-size: cover;
+  // border: 1px solid #ccc;
   height: 30px;
   width: 30px;
   border: solid 1px $color-hospital-green;
