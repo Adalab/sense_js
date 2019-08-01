@@ -103,3 +103,12 @@ input[type="radio"]:checked + label {
     background-color: $color-3-palette3;
   }
 }
+
+//para javaScript
+
+.js-collapsible_content {
+  display: none;
+}
+.js-collapsible_trigger {
+  cursor: pointer;
+}
