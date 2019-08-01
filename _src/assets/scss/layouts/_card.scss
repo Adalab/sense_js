@@ -92,6 +92,12 @@
     border-radius: 15px;
     padding: 5px 10px;
     margin-bottom: 20px;
+    outline: none;
+    transition-duration: 0.2s;
+    &:hover {
+      color: $color-white;
+      background-color: $color-light-grey-2;
+    }
     .trash_icon {
       margin-right: 8px;
     }
