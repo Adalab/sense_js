@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 /* eslint-disable no-console */
 /* eslint-disable indent */
 /* eslint-disable no-undef */
@@ -28,4 +29,19 @@ function sendRequest(userInfo) {
         .catch(function (error) {
             console.log(error);
         });
+}
+
+function showURL(result) {
+    const responseURL = document.querySelector('.response');
+    const twitterBtn = document.querySelector('.completed_content_button');
+    const twitterLink = document.querySelector('completed_content_url');
+    const tweet = "https://twitter.com/intent/tweet?text=My awesome profile card ";
+
+    if (result.succes) {
+        responseURL.innerHTML = '<a href=' + result.cardURL + '>' + result.cardURL + '</a>';
+        twitterBtn.classList.remove('hidden');
+        twitterLink.href = tweet + result.cardURL;
+    } else {
+        responseURL.innerHTML = 'ERROR:' + result.error;
+    }
 }
