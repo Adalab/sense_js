@@ -35,7 +35,7 @@ function showURL(result) {
     const responseURL = document.querySelector('.response');
     const twitterBtn = document.querySelector('.completed_content_button');
     const twitterLink = document.querySelector('completed_content_url');
-    const tweet = "https://twitter.com/intent/tweet?text=My awesome profile card ";
+    const tweet = "https://twitter.com/intent/tweet?text";
 
     if (result.succes) {
         responseURL.innerHTML = '<a href=' + result.cardURL + '>' + result.cardURL + '</a>';
