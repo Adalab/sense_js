@@ -1,3 +1,6 @@
+/* eslint-disable no-console */
+/* eslint-disable indent */
+/* eslint-disable no-undef */
 /* eslint-disable strict */
 const buttonShare = document.querySelector('.share_button_img');
 
@@ -15,7 +18,14 @@ function sendRequest(userInfo) {
             'content-type': 'application/json'
         },
     })
-        .then(function (resp) { buttonShare.disabled = false; return resp.json(); })
-        .then(function (result) { showURL(result); })
-        .catch(function (error) { console.log(error); });
+        .then(function (resp) {
+            buttonShare.disabled = false;
+            return resp.json();
+        })
+        .then(function (result) {
+            showURL(result);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
 }
