@@ -32,6 +32,12 @@ const resetInfo = function(ev){
   //Nombre y puesto - card
   cardName.innerHTML = defaultInfo.name;
   cardJob.innerHTML = defaultInfo.job;
+  //Paleta (consts definidas en design.js)
+  select1.checked = true;
+  select2.checked = false;
+  select3.checked = false;
+  cardPage.classList.remove('palette1','palette2', 'palette3');
+  cardPage.classList.add('palette1');
 };
 
 // const resetInfo = function(ev){
