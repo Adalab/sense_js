@@ -19,7 +19,7 @@
       width: 768px;
       display: flex;
       flex-direction: row-reverse;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-evenly;
       margin: auto;
     }
@@ -30,7 +30,7 @@
   &_card {
     @media all and (min-width: $width-tablet) {
       width: 329px;
-    }
+    } //repetido
     @media all and (min-width: $width-desktop) {
       width: 585px;
     }

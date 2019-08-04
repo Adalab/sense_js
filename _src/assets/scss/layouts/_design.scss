@@ -9,7 +9,7 @@
 }
 .form_item {
   margin-right: 10px;
-  display: none;
+  //display: none;
 }
 .radio_btn {
   width: 17px;
@@ -106,9 +106,17 @@ input[type="radio"]:checked + label {
 
 //para javaScript
 
-.js-collapsible_content {
-  display: none;
-}
+// .hidden {
+//   display: none;
+// }
 .js-collapsible_trigger {
   cursor: pointer;
+}
+//open
+.js-collasible_content_open {
+  display: flex;
+  justify-content: space-between;
+}
+.js-arrow {
+  transform: rotate(-180deg);
 }
