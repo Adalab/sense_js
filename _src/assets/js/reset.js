@@ -37,7 +37,9 @@ const resetInfo = function(ev){
   select2.checked = false;
   select3.checked = false;
   cardPage.classList.remove('palette1','palette2', 'palette3');
-  cardPage.classList.add('palette1');
+  cardPage.classList.add('palette'+defaultInfo.palette);
+
+  //Falta añadir una función para borrar los datos del local storage
 };
 
 buttonReset.addEventListener('click', resetInfo);
