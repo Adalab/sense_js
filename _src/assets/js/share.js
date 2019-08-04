@@ -32,16 +32,16 @@ function sendRequest(userInfo) {
 }
 
 function showURL(result) {
-    const responseURL = document.querySelector('.response');
+    const completedURL = document.querySelector('.completed_content_url');
     const twitterBtn = document.querySelector('.completed_content_button');
-    const twitterLink = document.querySelector('completed_content_url');
+    const twitterLink = document.querySelector('.completed_content_twitter');
     const tweet = "https://twitter.com/intent/tweet?text";
 
     if (result.succes) {
-        responseURL.innerHTML = '<a href=' + result.cardURL + '>' + result.cardURL + '</a>';
+        completedURL.innerHTML = '<a href=' + result.cardURL + '>' + result.cardURL + '</a>';
         twitterBtn.classList.remove('hidden');
         twitterLink.href = tweet + result.cardURL;
     } else {
-        responseURL.innerHTML = 'ERROR:' + result.error;
+        completedURL.innerHTML = 'ERROR:' + result.error;
     }
 }
