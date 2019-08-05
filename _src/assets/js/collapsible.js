@@ -1,5 +1,5 @@
 "use strict";
-console.log('hola');
+//console.log("hola");
 
 //.js-collapsible_content {
 //     display: none;
@@ -16,21 +16,24 @@ console.log('hola');
 //     transform: rotate(-180deg);
 //   }
 
-//const removeAddClass = document.querySelectorAll(".js-collapsible_content");
 // Si contiene la clase hidden
-function openAndClose(event) {
-  console.log('Hola');
-  // if (removeAddClass.classList.contains("hidden")) {
-  //   // Elimina la clase
-  //   classList.remove("hidden");
-  // } else {
-  //   // Sino
-  //   // Añade la clase hidden
-  //   classList.add("hidden");
-  // };
+const trigger = document.querySelectorAll(".js-collapsible_trigger");
+for (i = 0; i < trigger.lenght; i = i + 1) {
+  const allcollapsibles = trigger[i];
 }
 
-const trigger = document.querySelectorAll(".js-collapsible_trigger");
+function openAndClose(event) {
+  const content = document.querySelectorAll(".js-collapsible_content");
+  for (i = 0; i < content.lenght; i = i + 1) {
+    const allcontent = trigger[i];
+  }
 
-trigger.addEventListener("click", openAndClose);
-debugger;
+  if (content.classList.contains("js-collapsible_content"));
+  console.log("hola");
+
+  {
+    content.classList.remove("js-collapsible_content");
+  }
+}
+
+allcollapsibles.addEventListener("click", openAndClose);

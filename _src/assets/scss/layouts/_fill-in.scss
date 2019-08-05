@@ -81,12 +81,23 @@
   margin-top: 6px;
   margin-left: 20px;
 }
-.action_hiddenField {
+ .action_hiddenField {
   display: none;
-}
-.js-collapsible_content {
-  display: none;
-}
-.js-collapsible_trigger {
-  cursor: pointer;
-}
+ }
+
+// .js-collapsible_trigger {
+//   cursor: pointer;
+// }
+
+// // }
+// .js-collapsible_trigger {
+//   cursor: pointer;
+// }
+// //open
+// .js-collasible_content_open {
+//   display: flex;
+//   justify-content: space-between;
+// }
+// .js-arrow {
+//   transform: rotate(-180deg);
+// }
