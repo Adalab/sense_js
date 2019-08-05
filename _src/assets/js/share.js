@@ -10,8 +10,8 @@ const buttonShare = document.querySelector('.share_button_img');
 //const responseURL = document.querySelector('.response');
 const fullName = document.querySelector('#full_name');
 const jobTitle = document.querySelector('#job');
-const fileInput = document.querySelector('#img-profile');
-let imageToSave = '';
+//const fileInput = document.querySelector('#img-profile');
+//let imageToSave = '';
 let phone = document.querySelector('#phone');
 let email = document.querySelector('#email');
 let linkedin = document.querySelector('#linkedin');
@@ -31,7 +31,7 @@ function getUserInfo() {
         email: email.value,
         linkedin: linkedin.value,
         github: github.value,
-        photo: imageToSave,
+        //photo: imageToSave,
     }
 
     const userInfostr = JSON.stringify(userInfo);
@@ -65,7 +65,7 @@ function getJSONFromInputs(inputs) {
 
 // función sendRequest //
 function sendRequest(event) {
-    event.preventDefault();
+    event.preventDefault;
     buttonShare.disabled = true;
 
     fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
