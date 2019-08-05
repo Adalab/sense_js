@@ -28,12 +28,12 @@
 
     <div class="fill-in_item">
         <label class="fill-in_label" for="phone">Teléfono</label>
-        <input class="js-phone fill-in_input" id="phone" type="tel" minlength="9" name="phone" placeholder="678334765"/>
+        <input class="js-phone fill-in_input" id="phone" type="tel" minlength="9" name="phone" placeholder="+34 678334765" pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$"/>
     </div>
 
     <div class="fill-in_item">
         <label class="fill-in_label" for="email">Email</label>
-        <input class="js-email fill-in_input" id="email" type="email" name="email" placeholder="hermione-granger@gmail.com"/>
+        <input class="js-email fill-in_input" id="email" type="email" name="email" placeholder="hermione-granger@gmail.com" pattern= "^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"/>
     </div>
         
     <div class="fill-in_item">
