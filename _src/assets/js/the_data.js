@@ -20,7 +20,7 @@ function getUserData() {
   const palette = document.querySelector('.form_item:checked').value;
 
   const data = {
-    name: `${FullName}`,
+    name: FullName,
     job: Job,
     email: Phone,
     phone: Email,
