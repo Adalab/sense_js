@@ -33,7 +33,7 @@ function getUserData() {
   localStorage.setItem('data', JSON.stringify(data));
   console.log(data);
 }
-
+//Borrar los datos del local storage, se ejecuta con el botón reset.
 const resetData = function(){
   localStorage.removeItem('name');
 };
