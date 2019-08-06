@@ -8,15 +8,7 @@ const getLinkedinUser = document.querySelector('#linkedin');
 const getGitHubUser = document.querySelector('#github');
 const getPhotoUrl = document.querySelector('.js__profile-image');
 const colorSelected = document.querySelector('.js-palettes');
-let paletteSelected;
-let palette;
-//crear función para meter datos en el array, con lo del formualrio.
 
-function getColorSelected(ev) {
-  paletteSelected = ev.target.value;
-  return  palette = paletteSelected;
-}
-// const getPaletter = document.querySelector('.')
 function getUserData() {
   const FullName = getFullName.value;
   const Job = getJob.value;
@@ -25,6 +17,7 @@ function getUserData() {
   const LinkedinUser = getLinkedinUser.value;
   const GitHubUser = getGitHubUser.value;
   const PhotoUrl = getPhotoUrl.style.backgroundImage;
+  const palette = document.querySelector('.form_item:checked').value;
 
   const data = {
     name: `${FullName}`,
@@ -34,7 +27,7 @@ function getUserData() {
     linkedin: LinkedinUser,
     github: GitHubUser,
     photoURL: PhotoUrl,
-    thePalette: palette,
+    paletteSelected: palette
   };
   // Guardamos los datos pasados a cadena.
   localStorage.setItem('data', JSON.stringify(data));
@@ -42,5 +35,5 @@ function getUserData() {
 }
 
 
-colorSelected.addEventListener('change', getColorSelected);
+colorSelected.addEventListener('change', getUserData);
 dataForm.addEventListener('keyup', getUserData);
