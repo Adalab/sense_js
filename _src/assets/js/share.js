@@ -1,3 +1,5 @@
+import { write } from "fs";
+
 /* eslint-disable no-unused-vars */
 /* eslint-disable curly */
 /* eslint-disable semi */
@@ -57,3 +59,4 @@ function showURL(userInfo) {
 
 // Añadimos evento Listener al hacer click en el botón y nos pinte la función writeURL //
 buttonShare.addEventListener('click', writeURL);
+twitterBtn.addEventListener('click', writeURL);
