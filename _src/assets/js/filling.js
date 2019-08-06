@@ -1,3 +1,4 @@
+/* eslint-disable no-lonely-if */
 'use strict';
 
 const changeText = function(ev) {
