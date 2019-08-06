@@ -39,6 +39,10 @@
     font-style: normal;
     margin: auto;
     border-style: none;
+    &_twitter {
+      text-decoration: none;
+      color: $color-white;
+    }
     &_icon {
       font-size: 18px;
       margin-right: 10px;
