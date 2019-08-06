@@ -1,5 +1,3 @@
-import { write } from "fs";
-
 /* eslint-disable no-unused-vars */
 /* eslint-disable curly */
 /* eslint-disable semi */
