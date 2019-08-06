@@ -31,11 +31,10 @@ function getUserData() {
   };
   // Guardamos los datos pasados a cadena.
   localStorage.setItem('data', JSON.stringify(data));
-  console.log(data);
 }
 //Borrar los datos del local storage, se ejecuta con el botón reset.
 const resetData = function(){
-  localStorage.removeItem('name');
+  localStorage.removeItem('data');
 };
 
 colorSelected.addEventListener('change', getUserData);
