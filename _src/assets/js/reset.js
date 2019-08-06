@@ -39,7 +39,7 @@ const resetInfo = function(ev){
   cardPage.classList.remove('palette1','palette2', 'palette3');
   cardPage.classList.add('palette'+defaultInfo.palette);
 
-  //Falta añadir una función para borrar los datos del local storage
+  resetData();
 };
 
 buttonReset.addEventListener('click', resetInfo);
