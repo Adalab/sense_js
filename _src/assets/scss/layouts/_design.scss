@@ -58,9 +58,7 @@ input[type="radio"]:checked + label {
     padding: 13px 0;
     margin-left: auto;
     color: $color-dark-gray;
-    
   }
-
 }
 .tittlePalettes {
   display: flex;
@@ -108,17 +106,17 @@ input[type="radio"]:checked + label {
 
 //para javaScript
 
-// .hidden {
-//   display: none;
-// }
-// .js-collapsible_trigger {
-//   cursor: pointer;
-// }
-// //open
-// .js-collasible_content_open {
-//   display: flex;
-//   justify-content: space-between;
-// }
-// .js-arrow {
-//   transform: rotate(-180deg);
-// }
+.hidden {
+  display: none;
+}
+.js-collapsible_trigger {
+  cursor: pointer;
+}
+//open
+.js-collasible_content_open {
+  display: flex;
+  justify-content: space-between;
+}
+.js-arrow {
+  transform: rotate(-180deg);
+}
