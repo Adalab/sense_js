@@ -26,6 +26,7 @@
     padding: 13px 0;
     margin-left: auto;
     color: $color-dark-gray;
+    //transform: rotateX(180deg);
   }
 }
 .fill-in {
@@ -81,9 +82,15 @@
   margin-top: 6px;
   margin-left: 20px;
 }
- .action_hiddenField {
+.action_hiddenField {
   display: none;
- }
+}
+
+//javascript 
+
+.js-arrow {
+  transform: rotateX(180deg);
+}
 
 // .js-collapsible_trigger {
 //   cursor: pointer;

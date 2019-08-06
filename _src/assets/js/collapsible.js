@@ -16,24 +16,24 @@
 //     transform: rotate(-180deg);
 //   }
 
-// Si contiene la clase hidden
-const trigger = document.querySelectorAll(".js-collapsible_trigger");
-for (i = 0; i < trigger.lenght; i = i + 1) {
-  const allcollapsibles = trigger[i];
+const trigger = document.querySelector(".js-collapsible_trigger");
+const arrow = document.querySelector(".js-arrow");
+//for (let i = 0; i < trigger.lenght; i = i + 1) {
+// allcollapsibles = trigger[i];
+//}
+const content = document.querySelector(".js-collapsible_content");
+
+function openAndClose(ev) {
+  if (
+    content.classList.contains("js-collapsible_content") ||
+    arrow.classList.contains("js-arrow") 
+  ) {
+    content.classList.remove("js-collapsible_content") ||
+      arrow.classList.remove("js-arrow");
+  } else {
+    content.classList.add("js-collapsible_content") ||
+      arrow.classList.add("js-arrow");
+  }
 }
 
-function openAndClose(event) {
-  const content = document.querySelectorAll(".js-collapsible_content");
-  for (i = 0; i < content.lenght; i = i + 1) {
-    const allcontent = trigger[i];
-  }
-
-  if (content.classList.contains("js-collapsible_content"));
-  console.log("hola");
-
-  {
-    content.classList.remove("js-collapsible_content");
-  }
-}
-
-allcollapsibles.addEventListener("click", openAndClose);
+trigger.addEventListener("click", openAndClose);
