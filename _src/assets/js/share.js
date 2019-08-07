@@ -13,6 +13,7 @@ let linkedin = document.querySelector('#linkedin');
 let github = document.querySelector('#github');
 
 // variables para Twitter //
+const completedContainer = document.querySelector('.completed_content');
 const twitterUrl = document.querySelector('.completed_content_button_twitter');
 const tweet = 'https://twitter.com/intent/tweet?text=My awesome profile card: ';
 
@@ -48,15 +49,16 @@ function showURL(userInfo) {
     responseURL.innerHTML =
       '<a href=' + userInfo.cardURL + '>' + userInfo.cardURL + '</a>';
     twitterUrl.href = tweet + userInfo.cardURL;
+    completedContainer.classList.remove('hidden');
   } else {
     responseURL.innerHTML = 'ERROR:' + userInfo.error;
   }
 }
 
 // función de preuba para el botón de crear tarjeta para deshabilitarlo una vez pulsado //
-function buttonDisabledEnabled() {
+function buttonEnabledDisabled() {
   event.preventDefault();
-  buttonShare.classList.add('');
+  buttonShare.classList.add('share_button_disabled');
   buttonShare.setAttribute('disabled', true);
   writeURL();
 }
@@ -65,4 +67,4 @@ function buttonDisabledEnabled() {
 buttonShare.addEventListener('click', writeURL);
 
 // prueba función buttonDisableEnabled //
-buttonShare.addEventListener('click', buttonDisabledEnabled);
+buttonShare.addEventListener('click', buttonEnabledDisabled);
