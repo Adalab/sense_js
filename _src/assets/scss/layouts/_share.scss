@@ -1,11 +1,3 @@
-// .share_content {
-//   @media all and (min-width: $width-tablet) {
-//     border-radius: 6px;
-//     height: 812px;
-//     width: 329px;
-//   }
-// }
-
 .share_legend {
   width: 100%;
   height: 50px;
@@ -26,7 +18,7 @@
   }
   &_title {
     color: $color-dark-gray;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
@@ -45,7 +37,7 @@
   align-items: center;
   &_img {
     background-color: $color-dull-orange;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
