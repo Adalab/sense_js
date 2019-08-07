@@ -3,13 +3,18 @@
   flex-direction: column;
   min-height: 460px;
   min-width: 320px;
-  background-image: url(../images/green_background.jpg);
+  background-image: url(../images/city_mobile_background.png);
   background-size: cover;
+  background-position: right;
   @media all and (min-width: $width-tablet) {
+    background-image: url(../images/city_tablet_background.png);
     border-radius: 6px;
     height: 1000px;
     margin: 0;
     // width: 329px;
+  }
+  @media all and (min-width: $width-desktop) {
+    background-image: url(../images/city_background.png);
   }
 }
 .container {
