@@ -1,0 +1,14 @@
+.js-collapsible {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  &-trigger {
+    cursor: pointer;
+  }
+  &-content {
+    display: none;
+  }
+  &-open .js-collapsible-content {
+    display: block;
+  }
+}
