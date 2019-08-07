@@ -36,6 +36,10 @@
     }
   }
   &_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
     @media all and (min-width: $width-tablet) {
       width: 329px;
       margin-top: 10px;
