@@ -61,6 +61,7 @@ function buttonEnabledDisabled() {
   event.preventDefault();
   buttonShare.classList.add('share_button_disabled');
   buttonShare.setAttribute('disabled', true);
+  buttonShare.style.backgroundColor = '#d5d5d5';
   writeURL();
 }
 
