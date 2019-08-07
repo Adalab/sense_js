@@ -4,7 +4,7 @@
 const buttonShare = document.querySelector('.share_button_img');
 const responseURL = document.querySelector('.completed_content_url');
 
-// variables del formulario para el userInfo //
+// Variables del formulario para el userInfo //
 const fullName = document.querySelector('#full_name');
 const jobTitle = document.querySelector('#job');
 let phone = document.querySelector('#phone');
@@ -12,7 +12,7 @@ let email = document.querySelector('#email');
 let linkedin = document.querySelector('#linkedin');
 let github = document.querySelector('#github');
 
-// variables para Twitter //
+// Variables para Twitter //
 const completedContainer = document.querySelector('.completed_content');
 const twitterUrl = document.querySelector('.completed_content_button_twitter');
 const tweet = 'https://twitter.com/intent/tweet?text=My awesome profile card: ';
@@ -49,14 +49,14 @@ function showURL(userInfo) {
     responseURL.innerHTML =
       '<a href=' + userInfo.cardURL + '>' + userInfo.cardURL + '</a>';
     twitterUrl.href = tweet + userInfo.cardURL;
-    //Eliminamos la clase hidden del contenedor del link de la card + botón de twitter//
+    // Eliminamos la clase hidden del contenedor del link de la card + botón de twitter//
     completedContainer.classList.remove('hidden');
   } else {
     responseURL.innerHTML = 'ERROR:' + userInfo.error;
   }
 }
 
-// función de preuba para el botón de crear tarjeta para deshabilitarlo una vez pulsado //
+// Función para dehabilitar el botón de "crear tarjeta" al pinchar en él (se nos genera el link de la tarjeta) y se le aplique el background gris //
 function buttonEnabledDisabled() {
   event.preventDefault();
   buttonShare.classList.add('share_button_disabled');
@@ -68,5 +68,5 @@ function buttonEnabledDisabled() {
 // Añadimos evento Listener al hacer click en el botón y nos pinte la función writeURL //
 buttonShare.addEventListener('click', writeURL);
 
-// prueba función buttonDisableEnabled //
+// Añadimos evento listener para que al hacer click en el botón se ejecute la función de buttonEnabledDisabled //
 buttonShare.addEventListener('click', buttonEnabledDisabled);
