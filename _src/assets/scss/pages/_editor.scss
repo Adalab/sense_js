@@ -19,7 +19,7 @@
       width: 768px;
       display: flex;
       flex-direction: row-reverse;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-evenly;
       margin: auto;
     }
@@ -36,10 +36,6 @@
     }
   }
   &_form {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
     @media all and (min-width: $width-tablet) {
       width: 329px;
       margin-top: 10px;
