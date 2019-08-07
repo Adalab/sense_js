@@ -8,6 +8,7 @@ const getEmail = document.querySelector('#email');
 const getLinkedinUser = document.querySelector('#linkedin');
 const getGitHubUser = document.querySelector('#github');
 const getPhotoUrl = document.querySelector('.js__profile-image');
+const getPreview = document.querySelector('.js__profile-preview');
 const colorSelected = document.querySelector('.js-palettes');
 
 function getUserData() {
@@ -40,8 +41,7 @@ const resetData = function(){
 
 //Cuando hay info en localstorage, mantenerla en inputs y card.
 
-const keepData = function(){
-  const data = JSON.parse(localStorage.getItem('data'));
+const paintData = function(data){
   if (data){
     //Inputs form
     getFullName.value = data.name;
@@ -51,6 +51,7 @@ const keepData = function(){
     getLinkedinUser.value = data.linkedin;
     getGitHubUser.value = data.github;
     getPhotoUrl.style.backgroundImage = data.photoURL;
+    getPreview.style.backgroundImage = data.photoURL;
     //Paleta
     let palette = parseInt(data.paletteSelected) + 1;
     cardPage.classList.remove('palette1','palette2', 'palette3');
@@ -75,6 +76,17 @@ const keepData = function(){
   }
 };
 
+const keepData = function(){
+  const data = JSON.parse(localStorage.getItem('data'));
+  paintData(data);
+};
+
 keepData();
+getPhotoUrl.addEventListener('change', getUserData);
 colorSelected.addEventListener('change', getUserData);
 dataForm.addEventListener('keyup', getUserData);
+
+
+getPhotoUrl.addEventListener('change', function () {
+  debugger
+});
