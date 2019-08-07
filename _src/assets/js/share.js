@@ -49,9 +49,10 @@ function showURL(userInfo) {
     responseURL.innerHTML =
       '<a href=' +
       userInfo.cardURL +
-      ' target="_blank">' +
+      ' target="_blank" class="completed_content_url">' +
       userInfo.cardURL +
       '</a>';
+    //responseURL.style.color = '#e17334';
     twitterUrl.href = tweet + userInfo.cardURL;
     // Eliminamos la clase hidden del contenedor del link de la card + botón de twitter//
     completedContainer.classList.remove('hidden');
