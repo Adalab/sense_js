@@ -49,6 +49,7 @@ function showURL(userInfo) {
     responseURL.innerHTML =
       '<a href=' + userInfo.cardURL + '>' + userInfo.cardURL + '</a>';
     twitterUrl.href = tweet + userInfo.cardURL;
+    //Eliminamos la clase hidden del contenedor del link de la card + botón de twitter//
     completedContainer.classList.remove('hidden');
   } else {
     responseURL.innerHTML = 'ERROR:' + userInfo.error;
