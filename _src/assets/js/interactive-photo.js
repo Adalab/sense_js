@@ -16,6 +16,7 @@ function writeImage() {
 
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
+  getUserData();
 }
 
 function fakeFileClick() {
