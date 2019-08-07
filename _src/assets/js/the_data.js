@@ -82,11 +82,6 @@ const keepData = function(){
 };
 
 keepData();
-getPhotoUrl.addEventListener('change', getUserData);
+
 colorSelected.addEventListener('change', getUserData);
 dataForm.addEventListener('keyup', getUserData);
-
-
-getPhotoUrl.addEventListener('change', function () {
-  debugger
-});
