@@ -1,3 +1,4 @@
+/* eslint-disable no-lonely-if */
 'use strict';
 
 const changeText = function(ev) {
@@ -18,12 +19,10 @@ const changeText = function(ev) {
     } else {
       destElement.href = value;
     }
+  } else if (value === '') {
+    destElement.innerHTML = destElement.dataset.placeholder || '';
   } else {
-    if (value === '') {
-      destElement.innerHTML = destElement.dataset.placeholder || '';
-    } else {
-      destElement.innerHTML = value;
-    }
+    destElement.innerHTML = value;
   }
 };
 
