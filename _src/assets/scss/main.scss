@@ -1,6 +1,7 @@
 @import "core/reset";
 @import "core/variables";
 @import "core/mixins";
+@import "layouts/legend";
 @import "components/typography";
 @import "components/buttons";
 @import "pages/landing";
@@ -12,3 +13,4 @@
 @import "layouts/share";
 @import "layouts/completed";
 @import "layouts/footer";
+@import "components/collapsibles";

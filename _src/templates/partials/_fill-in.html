@@ -1,56 +1,97 @@
-<legend class="legend">
-    <i class="far fa-keyboard legend_icon"></i>
-    <h2 class="legend_title">Rellena</h2>
-    <i class="fas fas fa-chevron-up legend_arrow"></i>
-</legend>
-
-<div class="fill-in_items">
-
-    <div class="fill-in_item">
+<section class="fill-in_section js-collapsible">
+    <div class="js-collapsible-trigger">
+    <legend class="legend">
+      <i class="far fa-keyboard legend_icon"></i>
+      <h2 class="legend_title">Rellena</h2>
+      <i class="fas fas fa-chevron-up legend_arrow"></i>
+    </legend>
+</div>
+<div class="js-collapsible-content">
+    <div class="fill-in_items">
+      <div class="fill-in_item">
         <label class="fill-in_label" for="full_name">Nombre completo</label>
-        <input class="js-name fill-in_input" id="full_name" type="text" name="name" placeholder="Hermione Granger"
-            required />
-    </div>
-
-    <div class="fill-in_item">
+        <input
+          class="js-name fill-in_input"
+          id="full_name"
+          type="text"
+          name="name"
+          placeholder="Hermione Granger"
+          required
+        />
+      </div>
+      <div class="fill-in_item">
         <label class="fill-in_label" for="job">Puesto</label>
-        <input class="js-job fill-in_input" id="job" type="text" name="job" placeholder="Front-end developer" />
-    </div>
-
-    <div class="fill-in_item">
+        <input
+          class="js-job fill-in_input"
+          id="job"
+          type="text"
+          name="job"
+          placeholder="Front-end developer"
+        />
+      </div>
+      <div class="fill-in_item">
         <label class="fill-in_label" for="img-profile">Imagen de perfil</label>
 
         <div class="fill-in_buttonImg-wrapper">
-            <input class="fill-in_button js__profile-trigger" id="img-profile" type="button" value="Añadir imagen"
-                name="img-profile" />
-            <input name="photo" type="file" id="img-selector" class="action_hiddenField js__profile-upload-btn">
-            <div class="img-profile_preview js__profile-preview"></div>
+          <input
+            class="fill-in_button js__profile-trigger"
+            id="img-profile"
+            type="button"
+            value="Añadir imagen"
+            name="img-profile"
+          />
+          <input
+            name="photo"
+            type="file"
+            id="img-selector"
+            class="action_hiddenField js__profile-upload-btn"
+          />
+          <div class="img-profile_preview js__profile-preview"></div>
         </div>
-    </div>
-
-    <div class="fill-in_item">
+      </div>
+      <div class="fill-in_item">
         <label class="fill-in_label" for="phone">Teléfono</label>
-
-        <input class="js-phone fill-in_input" id="phone" type="tel" minlength="9" name="phone" placeholder="+34 678334765" pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$"/>
-    </div>
-
-    <div class="fill-in_item">
+        <input
+          class="js-phone fill-in_input"
+          id="phone"
+          type="tel"
+          minlength="9"
+          name="phone"
+          placeholder="+34 678334765"
+          pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$"
+        />
+      </div>
+      <div class="fill-in_item">
         <label class="fill-in_label" for="email">Email</label>
-
-        <input class="js-email fill-in_input" id="email" type="email" name="email" placeholder="hermione-granger@gmail.com" pattern= "^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"/>
-
-    </div>
-
-    <div class="fill-in_item">
+        <input
+          class="js-email fill-in_input"
+          id="email"
+          type="email"
+          name="email"
+          placeholder="hermione-granger@gmail.com"
+          pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+        />
+      </div>
+      <div class="fill-in_item">
         <label class="fill-in_label" for="linkedin">Linkedin</label>
-        <input class="js-linkedin fill-in_input" id="linkedin" type="text" name="linkedin"
-            placeholder="hermionegranger" />
-    </div>
-
-    <div class="fill-in_item">
+        <input
+          class="js-linkedin fill-in_input"
+          id="linkedin"
+          type="text"
+          name="linkedin"
+          placeholder="hermionegranger"
+        />
+      </div>
+      <div class="fill-in_item">
         <label class="fill-in_label" for="github">Github</label>
-        <input class="js-github fill-in_input" id="github" type="text" name="github" placeholder="hermione-granger" />
+        <input
+          class="js-github fill-in_input"
+          id="github"
+          type="text"
+          name="github"
+          placeholder="hermione-granger"
+        />
+      </div>
     </div>
-</div>
-
-<p class="response"></p>
+    </div>
+</section>

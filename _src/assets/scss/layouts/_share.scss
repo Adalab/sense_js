@@ -5,39 +5,6 @@
 //     width: 329px;
 //   }
 // }
-
-.share_legend {
-  width: 100%;
-  height: 50px;
-  border: none;
-  padding: 0;
-  margin: 0;
-  min-width: 320px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  cursor: pointer;
-  &_icon {
-    color: $color-dull-orange;
-    padding: 13px 0;
-    margin-right: 10px;
-  }
-  &_title {
-    color: $color-dark-gray;
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-  &_arrow {
-    padding: 13px 0;
-    margin-left: auto;
-    color: $color-dark-gray;
-  }
-}
-
 .share_button {
   cursor: pointer;
   display: flex;
