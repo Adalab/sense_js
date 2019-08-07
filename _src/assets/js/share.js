@@ -19,7 +19,7 @@ let github = document.querySelector('#github');
 
 const twitterBtn = document.querySelector('.completed_content_button');
 const twitterUrl = document.querySelector('.completed_content_button_twitter');
-const tweet = "https://twitter.com/intent/tweet?text=My awesome profile card: ";
+const tweet = 'https://twitter.com/intent/tweet?text=My awesome profile card: ';
 
 // Función que recoge la información del usuario y llama a la api externa (cards) para que nos genere la tarjeta de visita. //
 function writeURL() {
@@ -57,3 +57,4 @@ function showURL(userInfo) {
 
 // Añadimos evento Listener al hacer click en el botón y nos pinte la función writeURL //
 buttonShare.addEventListener('click', writeURL);
+//Coments
