@@ -3,62 +3,18 @@
   flex-direction: column;
   min-height: 460px;
   min-width: 320px;
-  background: linear-gradient(
-    180deg,
-    #ff2400,
-    #e81d1d,
-    #e8b71d,
-    #e3e81d,
-    #1de840,
-    #1ddde8,
-    #2b1de8,
-    #dd00f3,
-    #dd00f3
-  );
-  background-size: 200% 200%;
-  -webkit-animation: rainbow 10s ease infinite;
-  -z-animation: rainbow 10s ease infinite;
-  -o-animation: rainbow 10s ease infinite;
-  animation: rainbow 10s ease infinite;
-
+  background-image: url(../images/city_mobile_background.png);
+  background-size: cover;
+  background-position: right;
   @media all and (min-width: $width-tablet) {
+    background-image: url(../images/city_tablet_background.png);
     border-radius: 6px;
     height: 1000px;
     margin: 0;
     // width: 329px;
   }
-}
-@-webkit-keyframes rainbow {
-  0% {
-    background-position: 0% 82%;
-  }
-  50% {
-    background-position: 100% 19%;
-  }
-  100% {
-    background-position: 0% 82%;
-  }
-}
-@-moz-keyframes rainbow {
-  0% {
-    background-position: 0% 82%;
-  }
-  50% {
-    background-position: 100% 19%;
-  }
-  100% {
-    background-position: 0% 82%;
-  }
-}
-@keyframes rainbow {
-  0% {
-    background-position: 0% 82%;
-  }
-  50% {
-    background-position: 100% 19%;
-  }
-  100% {
-    background-position: 0% 82%;
+  @media all and (min-width: $width-desktop) {
+    background-image: url(../images/city_background.png);
   }
 }
 .container {
