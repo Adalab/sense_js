@@ -28,5 +28,8 @@
     padding: 13px 0;
     margin-left: auto;
     color: $color-dark-gray;
+    .js-collapsible-open & {
+      transform: rotate(180deg);
+    }
   }
 }
